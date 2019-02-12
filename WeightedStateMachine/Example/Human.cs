@@ -19,7 +19,7 @@ public class Human : MonoBehaviour
 
 
     public void Start() {
-        WeightedStateMachineManager = new WeightedStateMachineManager(this);
+        WeightedStateMachineManager = new WeightedStateMachineManager();
 
         // eat is binded to hunger
         Hunger = new SensoredFloat(WeightedStateMachineManager.CreateState(new System.Action(()=> this.Eat())), HungerSensitivity);
