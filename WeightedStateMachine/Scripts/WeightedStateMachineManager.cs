@@ -7,11 +7,9 @@ using System;
 public class WeightedStateMachineManager
 {
     public List<WeightedState> ManagedWeightedStates;
-    public WeightedState CurrentState;
-    internal dynamic Target;
+    public WeightedState CurrentState;    
 
-    public WeightedStateMachineManager(object target) {
-        Target = target;
+    public WeightedStateMachineManager() {
         ManagedWeightedStates = new List<WeightedState>();
     }
 
